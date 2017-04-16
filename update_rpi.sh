@@ -10,16 +10,16 @@
 #       Revision:   	-
 # ======================================= ==================================
 # Zuerst apt-get update
-/usr/bin/sudo apt-get update 
+sudo apt-get update
 
 # Dann upgrade  und autoremove
-/usr/bin/sudo apt-get -y upgrade
-/usr/bin/sudo apt-get -y dist-upgrade
-/usr/bin/sudo apt-get -y autoremove
+sudo apt-get -y upgrade
+sudo apt-get -y dist-upgrade
+sudo apt-get -y autoremove
 
 # Zum Schluss noch rpi-update und einen Neustart
-/usr/bin/sudo apt-get -y rpi-update
+sudo apt-get -y rpi-update
 
 echo "Update wurde durchgeführt Pi wird nun neugestartet!"
 
-/usr/bin/sudo reboot
+sudo reboot
