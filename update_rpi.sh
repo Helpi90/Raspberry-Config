@@ -1,14 +1,18 @@
-#!/bin/bash
-# ======================================= ==================================
+#!/bin/sh
+#===============================================================================
 #
-#       Datei:   		update_rpi.sh
 #
-#       Beschreibung:   Update RPI
-#       Autor:      	Marc Helpenstein(helpi9007@gmail.com)
-#       Version:    	1.0
-#       Erstellt:   	02.04.2017
-#       Revision:   	-
-# ======================================= ==================================
+#		  AUTHOR:         macbook
+#     EMAIL:          helpi9007@gmail.com
+#     CREATED:        16-04-2017
+#
+#     MODIFIED BY:    macbook
+#     MODIFIED DATE:  16-04-2017
+#
+#     DESCRIPTION:    ""
+#
+#===============================================================================
+
 # Zuerst apt-get update
 sudo apt-get update
 
