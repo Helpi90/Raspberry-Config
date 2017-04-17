@@ -1,21 +1,5 @@
 #!/bin/bash
-#
-#
-#
-#		  AUTHOR:         macbook
-#     EMAIL:          helpi9007@gmail.com
-#     CREATED:        16-04-2017
-#
-#     MODIFIED BY:    macbook
-#     MODIFIED DATE:  16-04-2017
-#
-#     DESCRIPTION:    ""
-#
-#   ========================       ==========================
-
-
-
-# Zuerst apt-get update
+# Zuerst agt-get update
 sudo apt-get update
 
 # Dann upgrade  und autoremove
