@@ -1,4 +1,14 @@
 #!/bin/bash
+# ======================================= ==================================
+#
+#       Datei:   		update_rpi.sh
+#
+#       Beschreibung:   Update Raspberry
+#       Autor:      	Marc Helpenstein(helpi9007@gmail.com)
+#       Version:    	1.0
+#       Erstellt:
+#       Revision:   	-
+# ======================================= ==================================
 # Zuerst agt-get update
 sudo apt-get update
 
