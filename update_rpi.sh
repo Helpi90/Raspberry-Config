@@ -18,12 +18,12 @@
 sudo apt-get update
 
 # Dann upgrade  und autoremove
-sudo apt-get upgrade -y
-sudo apt-get dist-upgrade -y
-sudo apt-get autoremove -y
+sudo apt-get upgrade
+sudo apt-get -y dist-upgrade
+sudo apt-get -y autoremove
 
 # Zum Schluss noch rpi-update und einen Neustart
-sudo apt-get rpi-update -y
+sudo apt-get -y rpi-update
 
 echo "Update wurde durchgefuehrt Pi wird nun neugestartet!"
 
