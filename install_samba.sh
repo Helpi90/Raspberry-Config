@@ -1,14 +1,19 @@
-#!/bin/bash
+#!/bin/sh
+#===============================================================================
+#
+#     FILE:           install_samba.sh
+#
+#		  AUTHOR:         Helpi_Stone
+#     EMAIL:          helpi9007@gmail.com
+#     CREATED:        22-04-2017
+#
+#     MODIFIED BY:    Helpi_Stone
+#     MODIFIED DATE:  22-04-2017
+#
+#     DESCRIPTION:    Installiert Samba, erstellt Samba User und ersetzt smb.conf
+#
+#===============================================================================
 
-#
-#       Datei:   		install_samba.sh
-#
-#       Beschreibung:   Installiert Samba, erstellt Samba User und ersetzt smb.conf
-#       Autor:      	Helpi9007
-#       Version:    	1.0
-#       Erstellt:   	03.04.2017
-#       Revision:   	-
-#
 ### Update
 sudo apt-get update
 ### Samba installieren

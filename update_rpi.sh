@@ -1,14 +1,19 @@
-#!/bin/bash
+#!/bin/sh
+#===============================================================================
+#
+#     FILE:           update_rpi.sh
+#
+#		  AUTHOR:         Helpi_Stone
+#     EMAIL:          helpi9007@gmail.com
+#     CREATED:        22-04-2017
+#
+#     MODIFIED BY:    Helpi_Stone
+#     MODIFIED DATE:  22-04-2017
+#
+#     DESCRIPTION:    ""
+#
+#===============================================================================
 
-#
-#       Datei:   		update_rpi.sh
-#
-#       Beschreibung:   Update Raspberry
-#       Autor:      	Marc Helpenstein(helpi9007@gmail.com)
-#       Version:    	1.0
-#       Erstellt:
-#       Revision:   	-
-#
 ### Zuerst agt-get update
 sudo apt-get update
 
@@ -20,6 +25,6 @@ sudo apt-get autoremove -y
 # Zum Schluss noch rpi-update und einen Neustart
 sudo apt-get rpi-update -y
 
-echo "Update wurde durchgefuehrt Pi wird nun neugestartet!"
+echo "Update wurde durchgef端hrt Pi wird nun neugestartet!"
 
 sudo reboot
