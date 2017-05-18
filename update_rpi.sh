@@ -25,6 +25,6 @@ sudo apt-get autoremove -y
 # Zum Schluss noch rpi-update und einen Neustart
 sudo apt-get rpi-update -y
 
-echo "Update wurde durchgef端hrt Pi wird nun neugestartet!"
+echo "Update wurde durchgefuehrt Pi wird nun neugestartet!"
 
 sudo reboot
