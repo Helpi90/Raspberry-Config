@@ -1,0 +1,22 @@
+# Access to Raspberry pi
+ssh pi@192.168.1.149
+
+# http://embeddedday.com/projects/raspberry-pi/a-step-further/install-motion-mmal/
+sudo apt-get install motion
+sudo apt-get remove motion
+wget https://www.dropbox.com/s/0gzxtkxhvwgfocs/motion-mmal.tar.gz
+tar zxvf motion-mmal.tar.gz
+
+# Change the config
+nano motion-mmalcam.conf
+
+# Run motion
+sudo ./motion -c motion-mmalcam.conf
+
+# If there is an error running motion, install the following package
+sudo apt-get install libjpeg62
+
+# Another useful guides:
+# http://www.instructables.com/id/Raspberry-Pi-as-low-cost-HD-surveillance-camera/?ALLSTEPS
+# http://www.maketecheasier.com/raspberry-pi-as-surveillance-camera/
+
