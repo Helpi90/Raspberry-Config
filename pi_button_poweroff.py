@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 #     FILE:                                pi_button_poweroff.py
-#     AUTHOR:                        macbook
-#     EMAIL:                             helpi9007@gmail.com
+#     AUTHOR:          macbook
+#     EMAIL:           helpi9007@gmail.com
 #     CREATED:                      2017-09-13
 #
-#     MODIFIED BY:                macbook
-#     MODIFIED DATE:           2017-09-13
+#     MODIFIED BY:                Helpi_Stone
+#     MODIFIED DATE:           2017-10-14
 #
 #     DESCRIPTION:               "Beschreibung"
 #
