@@ -1,12 +1,12 @@
 #!/bin/bash
 #======================================== ==================================
-#     FILE:           		            backup_prowl.sh
+#     FILE:             backup_prowl.sh
 #     AUTHOR:        		            macbook
 #     EMAIL:          		            helpi9007@gmail.com
 #     CREATED:        	            2017-08-31
 #
-#     MODIFIED BY:    	            macbook
-#     MODIFIED DATE:  	            2017-08-31
+#     MODIFIED BY:      macbook
+#     MODIFIED DATE:    2017-11-04
 #
 #     DESCRIPTION:    	            "Beschreibung"
 #

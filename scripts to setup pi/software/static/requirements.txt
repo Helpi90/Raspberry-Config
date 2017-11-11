@@ -1,0 +1,4 @@
+build_utils
+requests
+nose
+pyarchey
