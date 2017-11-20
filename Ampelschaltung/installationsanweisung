@@ -1,0 +1,73 @@
+Entwicklungs Tools installieren.
+
+Befehl:
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install i2c-tools
+sudo apt-get install python-smbus
+sudo apt-get install python-dev
+sudo apt-get install python-rpi.gpio
+sudo apt-get install python-setuptools
+sudo apt-get install python-pip
+sudo apt-get install libi2c-dev
+sudo apt-get install git
+sudo apt-get install git-core
+sudo apt-get install build-essential
+-----
+Adafruit Python GPIO:
+Befehl:
+sudo git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
+cd Adafruit_Python_GPIO
+sudo python setup.py install --record install-files.txt
+cd ..
+Webseite:
+https://github.com/adafruit/Adafruit_Python_GPIO
+-----
+MCP9808-device:
+Befehl:
+sudo git clone https://github.com/robotice-devices/mcp9808-device.git
+Webseite:
+https://github.com/robotice-devices/mcp9808-device
+-----
+-----
+Configuration GPIO I2C / SPI
+
+Befehl:
+sudo nano /etc/modprobe.d/raspi-blacklist.conf
+
+Edit:
+#blacklist i2c-bcm2708
+#blacklist spi-bcm2708
+-----
+Befehl:
+sudo nano /etc/modules
+
+Edit:
+i2c-dev
+i2c-bcm2708
+-----
+Befehl:
+sudo nano /boot/config.txt
+
+Edit:
+dtparam=i2c1=on
+dtparam=i2c_arm=on
+dtparam=i2c_arm=on,i2c_baudrate=400000
+-----
+I2C Adressstatus abfragen
+
+Befehl:
+sudo i2cdetect -y 1
+
+pi@Raspi1 ~/Desktop $ sudo i2cdetect -y 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- 21 -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+Der MCP23017 Portexpander bekommt die Hex Adresse (21).
+-----
