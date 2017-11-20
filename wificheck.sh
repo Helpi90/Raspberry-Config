@@ -1,12 +1,12 @@
 #!/bin/bash
 #======================================== ==================================
-#     FILE:                                wificheck.sh
+#     FILE:             wificheck.sh
 #     AUTHOR:                        macbook
 #     EMAIL:                             helpi9007@gmail.com
 #     CREATED:                      2017-09-13
 #
-#     MODIFIED BY:                macbook
-#     MODIFIED DATE:           2017-09-13
+#     MODIFIED BY:      Helpi_Stone
+#     MODIFIED DATE:    2017-11-19
 #
 #     DESCRIPTION:               "Beschreibung"
 #
@@ -89,7 +89,7 @@ fi
 
 echo
 echo "Current Setting:"
-/sbin/ifconfig $wlan | grep "inet addr:"
+/sbin/ifconfig $wlan | grep "inet Adresse:"
 echo
 
 # Check is complete, Remove Lock file and exit
