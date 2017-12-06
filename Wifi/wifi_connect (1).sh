@@ -18,6 +18,7 @@ ping -c2 192.168.2.1 > /dev/null
 # If the return code from ping ($?) is not 0 (meaning there was an error)
 if [ $? != 0 ]; then
     # Restart the wireless interface
+    #/sbin/ifdown wlan0; sleep 5; /sbin/ifup --force wlan0
     ifdown --force wlan0
     sleep 5
     ifup wlan0
