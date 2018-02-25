@@ -20,7 +20,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-
+# */5 * * * * /usr/local/bin/WiFi_Check
 DEBUG=0								# if 1 just echo commands, if 0 execute commands
 date=$(date +%m-%d-%Y)
 (( $DEBUG )) && EXEC="echo"
@@ -67,6 +67,7 @@ if isValidIP "$IP"; then									# valid router IP found ?
 		echo $date >> /var/log/wlan_check.log
 		echo "===========================" >> /var/log/wlan_check.log
 		echo "netRestart wird ausgeführt" >> /var/log/wlan_check.log
+		sleep 50
 		netRestart											# restart interface
 		IP=$(getRouterIP)									# retrieve router IP after restart
 		(( $DEBUG )) && IP=192.168.1.1
